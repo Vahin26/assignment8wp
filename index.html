@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Movies List</title>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e9e9e9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #d3d3d3;
+}
+
+#total-movies {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#clear-list-btn {
+  background-color: #f44336;
+}
+
+#clear-list-btn:hover {
+  background-color: #e53935;
+}
+</style>
+</head>
+<body>
+<script>
+</script>
+  <div class="container">
+    <h1>My Favorite Movies</h1>
+    
+    <input type="text" id="movie-input" placeholder="Enter movie name">
+    <button id="add-movie-btn">Add Movie</button>
+    
+    <ul id="movie-list"></ul>
+    
+    <button id="clear-list-btn">Clear List</button>
+    <p id="total-movies">Total Movies: 0</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
